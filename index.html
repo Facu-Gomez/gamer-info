@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/estilo.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="css/movil.css" media="screen and (max-width: 480px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomez Facundo - DWM2AP - 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="fotos/iconos/imagen-7.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <nav id="menu">
+            <p id="gamingt">GAMING TRAIN</p>
+            <ul id="hamburguesa">
+                <li><a href="#menu">Abrir</a></li>
+                <li><a href="#">Cerrar</a></li>
+            </ul>
+
+            <ul id="barra">
+                <li><a href="#entrenamiento">Entrenamiento</a></li>
+                <li><a href="#tipos">Calentamientos</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="inicio">
+            <h1>BIENVENIDO</h1>
+            <p>Los videojuegos son más rápidos y envolventes que nunca, </p> 
+            <p>por eso es fácil soñar despierto con la vida de un jugador profesional.</p>
+            <p>Entonces, ¿cómo mantienen los jugadores y, por extensión,</p><p>los equipos de deportes electrónicos una rutina diaria que </p>
+            <p>les permita seguir jugando a los juegos en los que destacan?</p>  
+        </div>
+        <div id="pastillas">
+            
+            <div class="p1" id="entrenamiento">
+                
+                <h2>ENTRENAMIENTO</h2>
+                <p>Una rutina diaria de unas seis a ocho horas de práctica estructurada en equipo.</p>
+                <p id="oculto">Complementada por varias horas más de práctica individual.</p>
+                <a id="mas" href="#oculto">ver más</a>
+                <a id="menos" href="#">ver menos</a>
+            </div>
+            <div class="p1" id="calentamiento">
+                <h2>CALENTAMIENTO</h2>
+                <p>Para evitar problemas de dolor en la muñeca, el hombro o la espalda, tomo
+                precauciones y practico </p>
+                <p id="oculto2">unos estiramientos sencillos con el personal de ciencias deportivas del equipo</p>
+                <a id="mas2" href="#oculto2">ver más</a>
+                <a id="menos2" href="#">ver menos</a>
+            </div>
+            <div class="p1" id="beneficios">
+                <h2>BENEFICIOS</h2>
+                <ol>
+                    <li>Mejoran la
+                        capacidad de
+                        respuesta
+                    </li>
+                    <li>
+                        Fomentan el trabajo en equipo. 
+                    </li>
+                    <li>
+                        Estimulan la creatividad, la atención y la memoria visual.
+                    </li>
+                </ol>
+                <ol start="4" id="oculto3">
+                    <li>Mejoran la estrategia y el liderazgo.</li>
+                </ol>
+                <a id="mas3" href="#oculto3">ver más</a>
+                <a id="menos3" href="#">ver menos</a>
+            </div>
+        </div>
+        <div id="tipos">
+            <h1>TIPOS </h1>
+            <h1>DE</h1>
+            <h1>CALENTAMIENTO</h1>
+                <h2>Calentamiento de manos y muñecas
+                </h2>
+                <p>Los movimientos que se realizan en casi
+                    cualquier tipo de juego son cortos,</p>
+                <p>rápidos y muy repetitivos</p> 
+                <h2>Calentamiento de hombros y cuello </h2>
+                <p>Toda la musculatura cervical y suboccipital están sometidos</p>
+                <p>a un gran trabajo de 
+                    estabilización durante una partida de 
+                    videojuegos.
+                </p>
+                <h2>Calentamiento de espalda y caderas</h2>
+                <p>Para mantener una buena postura, los 
+                    músculos que más trabajan son</p>
+                    <p>el cuadrado lumbar, la musculatura profunda de la espalda </p>
+                    <p>y los glúteos</p>
+        </div>
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/kmL5KWW3p7M" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="formulario">
+            <div class="texto">
+                <h3>COMPARTINOS TU OPINION</h3>
+            </div>
+            <form action="./enviarFormulario.php" method="post" enctype="multipart/form-data">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="mail">Ingresá tu mail</label>
+                <input type="email" id="mail" name="mail" required>
+
+                <label for="comment">Comentá aca</label>
+                <textarea name="comment" id="comment" cols="70" rows="10">Ingrese comentario</textarea>
+            
+                <label for="aceptar" class="boton1">Comentar</label>
+                <input type="submit" id="aceptar" value="Enviar" name="aceptar" class="boton1">
+            
+                <label for="limpiar" class="boton2">Borrar todo</label>
+                <input type="reset" id="limpiar" value="Borrar formulario" name="limpiar" class="boton2">
+            </form>
+        </div>
+        <div id="formulario-movil">
+            <div class="texto">
+                <h3>COMPARTINOS TU OPINION</h3>
+            </div>
+            <form action="./enviarFormulario.php" method="post" enctype="multipart/form-data">
+                <label for="NombreM">Nombre</label>
+                <input type="text" id="NombreM" name="Nombre" required>
+            
+                <label for="MailM">Ingresá tu mail</label>
+                <input type="email" id="MailM" name="Mail" required>
+
+                <label for="commentM">Comentá aca</label>
+                <textarea name="comment" id="commentM" cols="30" rows="10">Ingrese comentario</textarea>
+            
+                <label for="aceptarM" class="boton1">Comentar</label>
+                <input type="submit" id="aceptarM" value="Enviar" name="aceptar" class="boton1">
+            
+                <label for="limpiarM" class="boton2">Borrar todo</label>
+                <input type="reset" id="limpiarM" value="Borrar formulario" name="limpiar" class="boton2">
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <h4 class="item">Nombre: Facundo</h4>
+        <h4 class="item">Apellido: Gomez</h4>
+        <h4 class="item">Materia: Diseño Web</h4>
+        <h4 class="item">Turno: Mañana</h4>
+        <h4 class="item">Comision: AP</h4>
+        <h4 class="item">Año: 2022</h4>
+        <h4 class="item" id="wpp">+54 01 2623-3410</h4>
+        <h4 class="item" id="ig"><a href="https://www.instagram.com">@gaming.train</a></h4>
+        <h4 class="item" id="mailF"><a href="https://mail.google.com/mail/u/1/?fs=1&to=facundo.gomez@davinci.edu.ar&su=Mensaje&tf=cm" target="_blank">facundo.gomez@davinci.edu.ar</a></h4>
+    </footer>
+</body>
+</html>

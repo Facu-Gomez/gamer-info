@@ -1,0 +1,330 @@
+
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: #211627;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px;
+        width: 15%;
+        background-color: #d17a0f;
+        border-radius: 200px;
+        text-align: center;
+        transition: all .5s ease 0s;
+    }
+    nav ul li a {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    nav ul li:hover {
+        width: 20%;
+        background-color: #231c2c;
+        border: solid #44cbe0;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    #hamburguesa {
+        display: none;
+    }
+    #gamingt {
+        display: none;
+    }
+
+    #inicio {
+        width: 100%;
+        height: 40em;
+        background-image: url(../fotos/imagen-2.png); 
+        background-position: 2%;
+        background-position-x: 20em;
+    
+    }
+    
+    #inicio h1 {
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 5em;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    #inicio p {
+        color: #44cbe0;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
+        margin-left: 5%;
+        line-height: 40px;
+    }
+
+
+    #pastillas {
+        width: 90%;
+        height: 40em;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-left: 5%;
+    }
+
+    .p1 {
+        width: 28%;
+        height: 35em;
+        background: rgb(37,58,75);
+        background: linear-gradient(0deg, rgba(37,58,75,1) 0%, rgba(31,126,200,1) 100%);
+        border-radius: 5%;
+        margin-top: 10px;
+
+    }
+
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 60px;
+    }
+
+    .p1 p {
+        margin-top: 40px;
+        color: #44cbe0;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .p1 ol {
+        margin-top: 50px;
+    }
+    .p1 ol li {
+        color: #44cbe0;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .p1 a {
+        font-family: 'Ubuntu', sans-serif;
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 40%;
+        font-size: 1.3em;
+    }
+
+    #oculto {
+        display: none;
+        text-align: center;
+    }
+
+
+    #oculto:target{
+        display: block;
+        text-align: center;
+    }
+
+    #oculto:target + #mas  {
+        display: none;
+    }
+
+    #menos {
+        display: none;
+    }
+
+    #oculto:target + #mas + #menos {
+        display: block;
+    }
+
+    #oculto2 {
+        display: none;
+        text-align: center;
+    }
+
+
+    #oculto2:target{
+        display: block;
+        text-align: center;
+    }
+
+    #oculto2:target + #mas2  {
+        display: none;
+    }
+
+    #menos2 {
+        display: none;
+    }
+
+    #oculto2:target + #mas2 + #menos2 {
+        display: block;
+    }
+
+    #oculto3 {
+        display: none;
+        text-align: center;
+    }
+
+    #oculto3:target{
+        display: block;
+        text-align: center;
+    }
+
+    #oculto3:target + #mas3  {
+        display: none;
+    }
+
+    #menos3 {
+        display: none;
+    }
+
+    #oculto3:target + #mas3 + #menos3 {
+        display: block;
+    }
+
+    .p1:hover {
+        width: 30%;
+        height: 36em;
+        background: rgb(0,34,61);
+        background: linear-gradient(0deg, rgba(0,34,61,1) 0%, rgba(61,170,255,1) 100%);
+        transition: 0.5s;
+    }
+
+    .p1:hover p {
+        font-size: 1.6em;
+    }
+    .p1:hover ol li {
+        font-size: 1.7em;
+    }
+
+    #tipos {
+        width: 100%;
+        height: 40em;
+        background-image: url(../fotos/imagen-1.png); 
+        background-position: 2%;
+        background-position-x: -20em;
+    }
+
+    #tipos h1 {
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 5em; 
+        text-align: right;
+    }
+
+    #tipos h2{
+        text-align: right;
+        margin-top: 30px;
+        color: #fff;
+        font-family: 'Ubuntu light', sans-serif;
+    }
+
+    #tipos p{
+        text-align: right;
+        color: #44cbe0;
+        font-family: 'Ubuntu light', sans-serif;
+        font-size: 1.5em;
+    }
+
+    iframe {
+        margin-left: 15%;
+        margin-top: 10%;
+        width: 900px; 
+        height: 500px; 
+    }
+    #formulario-movil {
+        display: none;
+    }
+    #formulario {
+        width: 700px;
+        height: 500px;
+        border: 4px solid #d17a0f;
+
+        margin-left: 20%;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+
+    .texto h3 {
+        font-family: 'Ubuntu regular', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    input {
+        border-radius: 10px;
+        width: 15em;
+    }
+    
+    label {
+        display: block;
+        font-family: 'Ubuntu light', sans-serif;
+        color: #fff;
+        padding: 8px;
+    }
+    
+    form {
+        text-align: center;
+        padding: 20px;
+    }
+
+    textarea {
+        font-family: 'Ubuntu light', sans-serif;
+        border-radius: 10px;
+    }
+
+    footer {
+        width: 100%;
+        height: 330px;
+        margin-top: 5px;
+        background: rgb(37,58,75);
+        background: linear-gradient(0deg, rgba(37,58,75,1) 0%, rgba(31,126,200,1) 100%);
+    }
+
+    .item {
+        color: #fff;
+        font-family: 'Ubuntu regular', sans-serif;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    #wpp {
+        text-align: right;
+        margin-top: -10em;
+    }
+    #ig {
+        text-align: right;
+    }
+    #ig a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #mailF a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #mailF {
+        text-align: right;
+    }
+    #wpp::before{
+        content: url(../fotos/iconos/whatsapp.png);
+    }
+    #ig::before{
+        content: url(../fotos/iconos/instagram.png);
+    }
+    #mailF::before{
+        content: url(../fotos/iconos/email.png);
+    }

@@ -1,0 +1,378 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #211627;
+}
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#menu{
+    width: 100%;
+    height: 5em;
+    background-color: #d17a0f;
+}
+#menu p {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Ubuntu medium', sans-serif;
+    text-align: center;
+    margin-top: 5vw;
+}
+#hamburguesa li {
+    list-style: none;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 10em;
+    margin-top: -7vw;
+}
+#hamburguesa li a {
+    background: url("../fotos/iconos/menu.png")no-repeat;
+    display: block;
+    width: 35px;
+    height: 6em;
+    padding: 1em;
+}
+
+#barra {
+    width: 100% ;
+    height: 100em;
+    position: absolute;
+    top: 4em;
+    left: -100%;
+    background: rgb(37,58,75);
+    background: linear-gradient(0deg, rgba(37,58,75,1) 0%, rgba(31,126,200,1) 100%);
+    transition: left .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 80%;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    background: #fff;
+    border-radius: 200px;
+    color: #44cbe0;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    line-height: 2em;
+}
+
+#hamburguesa li:last-child {
+    display: none;
+}
+
+nav:target #barra {
+    left: 0;
+}
+nav:target #hamburguesa li:first-child {
+    display: none;
+}
+nav:target #hamburguesa li:last-child {
+    display: block;
+}
+
+#inicio {
+    margin-top: 100px;
+    height: 40em;
+    background-image: url(../fotos/imagen-2.png);
+    background-repeat: no-repeat;
+    background-size: 130vw;
+}
+
+#inicio h1 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4em;
+    margin-top: 2%;
+    text-align: center;
+    z-index: 0;
+}
+
+#inicio p {
+    color: #44cbe0;
+    font-family: 'Ubuntu regular', sans-serif;
+    font-size: 1em;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#inicio p:first-of-type {
+    margin-top: 14em;
+}
+
+#pastillas {
+    width: 100%;
+    height: 40em;
+    margin-top: 5em;
+    align-items: center;
+}
+
+.p1 {
+    width: 85vw;
+    height: 35em;
+    background: rgb(37,58,75);
+    background: linear-gradient(0deg, rgba(37,58,75,1) 0%, rgba(31,126,200,1) 100%);
+    border-radius: 5%;
+    margin-top: 10px;
+    margin-left: 7vw;
+
+}
+
+.p1:first-of-type{
+    margin-top: -30vw;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 40px;
+}
+
+.p1 p {
+    margin-top: 40px;
+    color: #44cbe0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 40px;
+}
+
+.p1 ol {
+    margin-top: 50px;
+}
+.p1 ol li {
+    color: #44cbe0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.p1 a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 40%;
+    font-size: 1.3em;
+}
+
+#oculto {
+    display: none;
+    text-align: center;
+}
+
+
+#oculto:target{
+    display: block;
+    text-align: center;
+}
+
+#oculto:target + #mas  {
+    display: none;
+}
+
+#menos {
+    display: none;
+}
+
+#oculto:target + #mas + #menos {
+    display: block;
+}
+
+#oculto2 {
+    display: none;
+    text-align: center;
+}
+
+
+#oculto2:target{
+    display: block;
+    text-align: center;
+}
+
+#oculto2:target + #mas2  {
+    display: none;
+}
+
+#menos2 {
+    display: none;
+}
+
+#oculto2:target + #mas2 + #menos2 {
+    display: block;
+}
+
+#oculto3 {
+    display: none;
+    text-align: center;
+}
+
+#oculto3:target{
+    display: block;
+    text-align: center;
+}
+
+#oculto3:target + #mas3  {
+    display: none;
+}
+
+#menos3 {
+    display: none;
+}
+
+#oculto3:target + #mas3 + #menos3 {
+    display: block;
+}
+
+#tipos {
+    margin-top: 280vw;
+    width: 100%;
+    height: 40em;
+    background-image: url(../fotos/imagen-1.png); 
+    background-position-x: -25em;
+}
+
+
+
+#tipos h1 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em; 
+    margin-top: 50px;
+    line-height: 10px;
+    text-align: left;
+}
+
+#tipos h1:first-of-type {
+    padding-top: 60vw;
+}
+
+#tipos h2{
+    text-align: left;
+    color: #fff;
+    font-family: 'Ubuntu light', sans-serif;
+    width: 70%;
+}
+
+#tipos h2:first-of-type{
+    margin-top: 100vw;
+}
+
+#tipos p{
+    color: #44cbe0;
+    font-family: 'Ubuntu light', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 40px;
+}
+
+iframe {
+    margin-top: 1000px;
+    width: 25em;
+    height: 15em;
+    border: 0;
+}
+
+#formulario {
+    display: none;
+}
+
+#formulario-movil {
+    width: 85vw;
+    height: 500px;
+    border: 4px solid #d17a0f;
+    margin-top: 50px;
+    margin-left: 7vw;
+    border-radius: 10px;
+}
+
+.texto h3 {
+    font-family: 'Ubuntu regular', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+input {
+    border-radius: 10px;
+    width: 15em;
+}
+
+label {
+    display: block;
+    font-family: 'Ubuntu light', sans-serif;
+    color: #fff;
+    padding: 8px;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+}
+
+textarea {
+    font-family: 'Ubuntu light', sans-serif;
+    border-radius: 10px;
+}
+
+
+footer {
+    width: 100%;
+    height: 330px;
+    margin-top: 5px;
+    background: rgb(37,58,75);
+    background: linear-gradient(0deg, rgba(37,58,75,1) 0%, rgba(31,126,200,1) 100%);
+}
+
+.item {
+    color: #fff;
+    font-family: 'Ubuntu regular', sans-serif;
+    margin-top: 20px;
+    font-size: 1em;
+}
+#wpp {
+    text-align: right;
+    margin-top: -10em;
+}
+#ig {
+    text-align: right;
+}
+#ig a{
+    text-decoration: none;
+    color: #fff;
+}
+#mailF a{
+    text-decoration: none;
+    color: #fff;
+}
+#mailF {
+    text-align: right;
+}
+#wpp::before{
+    content: url(../fotos/iconos/whatsapp.png);
+}
+#ig::before{
+    content: url(../fotos/iconos/instagram.png);
+}
+#mailF::before{
+    content: url(../fotos/iconos/email.png);
+}
